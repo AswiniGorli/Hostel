@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+    .login-container {
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+    }
+    
+   
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit" >Login</button>
+           
+        </form>
+        <p id="errorMessage"></p>
+        
+    </div>
+    
+    
+    <script>
+    const loginForm = document.getElementById('loginForm');
+const errorMessage = document.getElementById('errorMessage');
+
+loginForm.addEventListener('submit', (event) => {
+    event.preventDefault(); // Prevent default form submission
+
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Replace this with your actual authentication logic
+    if (username == 'aswi' && password ==' 1234') {
+        // Successful login, redirect or perform other actions
+        console.log('Login successful!');
+   function next(){
+    window.location.href="fresh.html";
+   }
+
+    } else {
+        errorMessage.textContent = 'Invalid username or password.';
+    }
+   
+});
+ </script>
+
+
+</body>
+</html>
