@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Room Booking</title>
+</head>
+<body>
+    <h1>Room Booking</h1>
+    <p>Is the room empty? (Yes/No)</p>
+    <input type="radio" name="room_status" value="yes"> Yes
+    <input type="radio" name="room_status" value="no"> No
+
+    <button id="bookButton">Book Room</button>
+
+    <div id="bookingResult"></div>
+
+    <script>
+        document.getElementById("bookButton").addEventListener("click", function() {
+            var roomStatus = document.querySelector('input[name="room_status"]:checked').value;
+
+            if (roomStatus === "yes") {
+                document.getElementById("bookingResult").innerHTML = "Room booked successfully!";
+            } else {
+                document.getElementById("bookingResult").innerHTML = "Room is not available for booking.";
+            }
+        });
+    </script>
+</body>
+</html>
