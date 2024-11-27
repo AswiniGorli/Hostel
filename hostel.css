@@ -12,9 +12,9 @@ font-weight: 400;
   }
   
       button {
-        margin : 2% 20%;
+        margin : 2% 35%;
         font-weight: bolder;
-          width: 50px;
+          width: 250px;
           height: 100px;
           border: 2px solid black;
           border-radius: 25px;
@@ -88,7 +88,10 @@ height: 100px;
         border-radius: 20px;
         box-shadow: 15px 20px 15px rgb(66, 62, 62);
     }
-
+iframe
+{
+    margin: 10%;
+}
     h1
     {
 color: rgb(0, 0, 0);
@@ -96,7 +99,8 @@ font-size: 3rem;
     }
     footer{
         padding: 50px 4% 10px ;
-        color: #666;
+        color: #f8f3f3;
+        background-color: #fff6f6;
     }
     footer h1{
         font-size: 1.2rem;
